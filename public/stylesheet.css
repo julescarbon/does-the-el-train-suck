@@ -22,7 +22,11 @@ header h1 {
     width:400px;
     height:400px;
     min-height:400px;
-    background: url(/circle.png);
+    background: #00a1de;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    border-radius: 400px;
+//    background: url(/circle.png);
 }
 
 #status h2 {
