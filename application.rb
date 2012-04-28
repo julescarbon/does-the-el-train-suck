@@ -5,7 +5,7 @@ require 'erb'
 
 get '/' do
   @doc = Nokogiri::XML(open('http://www.transitchicago.com/api/1.0/routes.aspx'))
-  @status = @doc.xpath('//RouteStatus')[2]
+  @status = @doc.xpath('//RouteStatus')[1]
   @train_status = @status.to_s =~ /Normal Service/ ? 'nope' : 'yup'
   erb :index
 end
